@@ -1,0 +1,16 @@
+ML--1115
+	1.define a set of function
+	2.goodness of function
+	3.pick the best function
+
+	二元分类
+		标签样本-》学习样本规律
+	多元分类（某种程度上可以理解为多个二元分类
+	线性模型
+	DL：确定输入输出，通过训练样本进行学习样本的统计学规律，（可解释，不可解释？）
+	RL：正负反馈，设置奖励函数，根据每一步的奖惩判断
+	监督学习：通过标签数据与output比对
+	无监督学习：大量无标签数据
+	structured Learning：
+		结构性 
+	挑选model和损失函数-》调参
