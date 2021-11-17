@@ -1,0 +1,34 @@
+Regression--1116
+    示例-预测pokemon cp值
+    任务来源：判断一只pokemon是否值得培养
+    input：pokemon
+    output：进化后的cp值
+    step1 model
+        告诉train data 合适的function
+    step2 goodness of function
+    ------------------
+        输入为权重·属性（attack、种族等等）的集合（不一定是求和）
+        输出为pokemon cp
+        最终结果为model拟合train data曲线
+        小心过拟合
+    -------------
+        loss function
+        L（f） = L（w，b）权重 偏差
+        常见loss （Y实际值-Y预测值）的平方 = 估测误差
+        该model对于数据集的所有估测误差之和就是其loss
+        即选择loss最低的function
+    step3 best function
+        寻找一个function使L（f）最小，即寻找w b使f的loss最小
+        -------------
+        Gradient Descent 梯度下降法（面向所有可微分的function
+        穷举所有参数，寻找一个loss最小的function
+        linear regression is convex 凸面
+        model引入高次或者多属性
+        --------------
+        regularization 归一化（不需要考虑偏差 因为bias只影响上下，不影响平滑程度
+        L+a·（w）平方和
+        为什么权重小时侯f is better
+        -----使函数较为平滑（追求平滑why
+        how smooth，调整平滑程度
+
+	
