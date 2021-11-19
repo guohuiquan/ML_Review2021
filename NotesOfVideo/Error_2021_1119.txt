@@ -1,0 +1,39 @@
+Error-1119
+	due to bias and variance
+	--------------
+	how to handle bias
+		simple model 往往其bias较大，而较为复杂的model其bias往往比较小
+		 
+	--------------
+	how to handle variance
+		simple model 受不同data影响程度低
+		其模型拟合能力不如复杂模型，所以对一些偏差较大的值不是很敏感
+
+	--------
+		过拟合-bias很小 variance很大
+			1.增加data，
+			2.Regularization。归一化
+		欠拟合-bias很大，variance很小
+			重写model，考虑更多的因素，model未包含目标模型
+	--------
+		如何辨别model是bias大还是variance大
+			你的model无法拟合你的数据，则bias大，
+			如果你的模型拟合训练数据，而在测试数据上无法拟合，则variance大	
+	-------
+	model selection
+		not do
+			不要通过testdata影响你决断模型
+			training set分为training set，validation set
+				train 来训练模型
+				validation来选择模型
+			选择模型后，再用全部的数据train一下模型
+			容易过拟合test data
+		k折交叉验证-N-fold Cross Validation
+			train data 分 n 份。
+			如分为3份，2train 1 validation. T T V
+														T V T
+														V T T
+			然后在对模型的error avg，选出avg error最小的模型
+			在用整个数据集训练该模型
+			
+				
