@@ -1,0 +1,12 @@
+Backpropagation-1122
+	目的：为了更有效率的计算梯度
+	----------
+	chain rule
+		y=g(x) z=h(y)
+		x->y->z
+	------------
+	forward pass
+		对所有参数计算权重w对z的偏微分
+	backward pass
+		对所有参数计算z对C的偏微分
+	两者相乘，即为backpropagation
