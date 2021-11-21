@@ -1,0 +1,22 @@
+DL-1121
+	DL的历史
+	Perception （Linear model) 1958
+	Perception has limitation 1968
+	多层perception 1980
+	back propagation 	反向传播 1986
+	RBM initialzation 2006
+	-----------
+	steps for DL
+		与之前相同 Neural network
+					goodness of function 
+					pick the best function	
+	全连接神经网络-FCN
+	--------
+	Matrix Operation
+		将input layer和权重、偏差理解为矩阵运算，如2*2点乘2*1
+		feature extractor replacing feature engineering
+		output Larry = multi-class classifier
+	如何抽取feature =》design a network structure
+	---------------
+	why deeper?
+		任何连续的function,都可以用一个隐藏层的network表示
