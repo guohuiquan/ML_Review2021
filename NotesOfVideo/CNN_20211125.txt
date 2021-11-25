@@ -1,0 +1,26 @@
+CNN-1125
+	--------	
+	why cnn for image
+	通过卷积核过滤到一些参数
+	image->(conv->maxpooling)->flatten
+	--------
+	conv
+		卷积操作
+			-即filter只看卷积核大小的区域
+			-即每个filter关注的特征不同
+			共成为feature map
+	---------
+	卷积和全连接神经网络的关系
+		conv就是fully-connected将一些权重去掉而已
+		以及共用同一组weight，即为shared weights，共享权重
+		结果-》less参数，
+	--------
+	池化-max pooling
+		最大池化，平均池化
+	----------
+	结果：得到一个比较小的image
+		input多少个filter，output多少个filter
+	-----------------
+	flatten-将矩阵拉直为一维
+	---------
+	高维vector为tensor
